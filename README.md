@@ -63,16 +63,7 @@ This repository contains documentation and resources for a custom development bo
 | RTS      |Request to send                                             |
 | +5V      |+5V output                                                  |
 
-- **Note** : The MCURX and MCUTX pins must be connected exactly to the RX and TX pins of the microcontroller and not MCURX to TX and MCUTX to RX.
-```
-❌
-MCUTX pin --- Microcontroller RX pin
-MCURX pin --- Microcontroller TX pin
 
-✅
-MCUTX pin --- Microcontroller TX pin
-MCURX pin --- Microcontroller RX pin
-```
 
 ## Getting Started
 
@@ -97,6 +88,16 @@ uRX -> Microcontroller Receive pin
 uTX -> Microcontroller Transmit pin
 cRX -> CH340n Receive pin
 cTX -> CH340n Transmit pin
+```
+- The MCURX and MCUTX pins must be connected exactly to the RX and TX pins of the microcontroller and not MCURX to TX and MCUTX to RX.
+```
+❌
+MCUTX pin --- Microcontroller RX pin
+MCURX pin --- Microcontroller TX pin
+
+✅
+MCUTX pin --- Microcontroller TX pin
+MCURX pin --- Microcontroller RX pin
 ```
 
 ## License
